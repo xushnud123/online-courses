@@ -1,0 +1,180 @@
+.course-purchase {
+    background-color: #121212;
+}
+
+.course-purchase__container {
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and(max-width:992px) {
+        width: calc(100% - 60px);
+    }
+    @media screen and (max-width: 678px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+
+.buy-btn {
+    color: #fff;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    cursor: pointer;
+    background-image: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    &:hover {
+        background-image: linear-gradient(to right, #451046, #DF5950);
+    }
+
+    @media screen and (max-width: 678px) {
+        margin-top: 30px;
+    }
+}
+
+.course-about {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .course-about__text {
+        margin-right: 30px;
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            opacity: 0.4;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .course-about__content {
+        h2 {
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            margin-left: auto;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 678px) {
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+
+.money-from__students-section {
+    width: 716px;
+
+    .money {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            opacity: 0.4;
+            margin-right: 30px;
+
+            @media screen and (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+
+            @media screen and (max-width: 350px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .process {
+        .line-color {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .purple-line__color {
+                width: 61.6%;
+                height: 6px;
+                background-image: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+            }
+
+            .white-line__color {
+                width: 38.4%;
+                height: 6px;
+                background-color: #fff;
+            }
+
+            @media screen and (max-width: 678px) {
+                width: 100%;
+            }
+        }
+
+        .process-number {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            opacity: 0.4;
+        }
+
+        @media screen and (max-width: 678px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1205px) {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 678px) {
+        width: 100%;
+        margin-top: 0;
+    }
+}
