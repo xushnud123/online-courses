@@ -21,6 +21,32 @@ export const genres = [
   },
 ];
 
+export const general = [
+  {
+    _id: 1,
+    img: "img/Ellipse2_1.svg",
+    author: "Дмитрий Иванов",
+    text: "Специалист по видеокартам"
+  },
+  {
+    _id: 2,
+    img: "img/Ellipse2_2.svg",
+    author: "Дмитрий Иванов",
+    text: "Специалист по видеокартам"
+  },
+  {
+    _id: 3,
+    img: "img/Ellipse2_3.svg",
+    author: "Дмитрий Иванов",
+    text: "Специалист по видеокартам"
+  },
+];
+
 export function getGenres() {
   return genres;
+}
+
+
+export function getGenresId(){
+  return general;
 }

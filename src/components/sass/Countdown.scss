@@ -1,0 +1,93 @@
+.countdown{
+    max-width: 1296px;
+    margin: 180px auto 0 auto;
+    .timer{
+        h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+    .timer_content{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(4,102px);
+        grid-gap: 30px;
+        @media  screen and (max-width:580px) {
+            grid-template-columns: repeat(2,102px);
+        }
+        section{
+            width: 100%;
+            height: 112px;
+            background: #121212;
+            
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            p{
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 140%;
+            }
+            span{
+                margin-top: 5px;
+                color: white;
+                opacity: 0.4;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .countdown{
+        width: calc(100% - 160px);
+        .timer{
+            h2{
+                font-size: 48px;
+                line-height: 140%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:700px) {
+    .countdown{
+        margin-top: 100px;
+        width: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .timer{
+            h2{
+                font-size: 40px;
+                line-height: 140%;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width:700px) {
+    .countdown{
+        margin-top: 100px;
+        width: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .timer{
+            h2{
+                font-size: 30px;
+                line-height: 140%;
+            }
+        }
+    }
+}

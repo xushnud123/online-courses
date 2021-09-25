@@ -11,9 +11,15 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media screen and(max-width:992px) {
+    @media screen and(min-width:992px) {
         width: calc(100% - 60px);
+        margin: 0  auto;
     }
+        @media screen and(max-width:992px) {
+        width: calc(100% - 60px);
+        margin: 0  auto;
+    }
+
     @media screen and (max-width: 678px) {
         flex-direction: column-reverse;
         align-items: center;

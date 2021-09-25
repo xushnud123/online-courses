@@ -1,9 +1,8 @@
 
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router';
 import Asosiy from './components/MenuSection/Asosiy';
 import CollectorMenu from './components/MenuSection/CollectorMenu';
-import NotFound from './components/MenuSection/NotFound';
 
 
 function App() {
@@ -18,10 +17,8 @@ function App() {
           <Route path="/raspi" />
           <Route path="/prepo" />
           <Route path="/ras" />
-          <Route path="/not-found" component={NotFound} />
           <Route path="kontact" />
           <Route path="kabinet" />
-          <Redirect to="/not-found" />
         </Switch>
       </div>
     </React.Fragment>
